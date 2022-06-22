@@ -40,6 +40,17 @@ If you want to enable it everywhere, put this line in your `init.el`:
 See library [sideline](https://github.com/emacs-sideline/sideline) for more
 information.
 
+## 🔧 Customization
+
+### Varialbes
+
+* `sideline-blame-uncommitted-author-name` - Message for commits where you are author.
+* `sideline-blame-uncommitted-message` - Message for uncommitted lines.
+
+### Face
+
+* `sideline-blame` - Face for blame info.
+
 ## 🔗 References
 
 * [vc-msg](https://github.com/redguardtoo/vc-msg)
