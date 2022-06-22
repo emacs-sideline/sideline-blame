@@ -6,9 +6,33 @@
 
 [![CI](https://github.com/emacs-sideline/sideline-blame/actions/workflows/test.yml/badge.svg)](https://github.com/emacs-sideline/sideline-blame/actions/workflows/test.yml)
 
+## 🔨 Quickstart
+
+```elisp
+(leaf sideline
+  :init
+  (setq sideline-backends-left '((sideline-blame . down))))
+```
+
+Then open a file with source control, then do:
+
+```
+M-x sideline-mode
+```
+
+If you want to enable it everywhere, put this line in your `init.el`:
+
+```elisp
+(global-sideline-mode 1)
+```
+
+See library [sideline](https://github.com/emacs-sideline/sideline) for more
+information.
+
 ## 🔗 References
 
 * [vc-msg](https://github.com/redguardtoo/vc-msg)
+* [blamer.el](https://github.com/Artawower/blamer.el)
 
 ## Contribute
 
