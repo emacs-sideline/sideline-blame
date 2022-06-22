@@ -6,6 +6,17 @@
 
 [![CI](https://github.com/emacs-sideline/sideline-blame/actions/workflows/test.yml/badge.svg)](https://github.com/emacs-sideline/sideline-blame/actions/workflows/test.yml)
 
+Supported source control are listed in [vc-msg](https://github.com/redguardtoo/vc-msg).
+
+Currently supports the following:
+
+* Git
+* Mercurial
+* Subversion
+* Perforce
+
+*P.S. See their homepage for newest support!*
+
 ## 🔨 Quickstart
 
 ```elisp
