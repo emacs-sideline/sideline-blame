@@ -4,7 +4,7 @@
 # sideline-blame
 > Show blame messages with sideline
 
-[![CI](https://github.com/jcs-elpa/sideline-blame/actions/workflows/test.yml/badge.svg)](https://github.com/jcs-elpa/sideline-blame/actions/workflows/test.yml)
+[![CI](https://github.com/emacs-sideline/sideline-blame/actions/workflows/test.yml/badge.svg)](https://github.com/emacs-sideline/sideline-blame/actions/workflows/test.yml)
 
 ## Contribute
 
