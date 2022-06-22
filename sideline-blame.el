@@ -65,13 +65,21 @@
   :type 'string
   :group 'sideline-blame)
 
+(defface sideline-blame
+  '((t :foreground "#7a88cf"
+       :background nil
+       :italic t))
+  "Face for blame info."
+  :group 'sideline-blame)
+
 ;;;###autoload
 (defun sideline-blame (command)
   "Backend for sideline.
 
 Argument COMMAND is required in sideline backend."
   (cl-case command
-    (`candidates (cons :async #'sideline-blame--get-message))))
+    (`candidates (cons :async #'sideline-blame--get-message))
+    (`face 'sideline-blame)))
 
 (defun sideline-blame--get-message (callback &rest _)
   "Return the message.
