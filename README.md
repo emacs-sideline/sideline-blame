@@ -6,6 +6,10 @@
 
 [![CI](https://github.com/emacs-sideline/sideline-blame/actions/workflows/test.yml/badge.svg)](https://github.com/emacs-sideline/sideline-blame/actions/workflows/test.yml)
 
+## 🔗 References
+
+* [vc-msg](https://github.com/redguardtoo/vc-msg)
+
 ## Contribute
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
