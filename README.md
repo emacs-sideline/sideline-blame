@@ -42,12 +42,12 @@ information.
 
 ## 🔧 Customization
 
-### Varialbes
+#### 🧪 Variables
 
 * `sideline-blame-uncommitted-author-name` - Message for commits where you are author.
 * `sideline-blame-uncommitted-message` - Message for uncommitted lines.
 
-### Face
+#### 🧪 Face
 
 * `sideline-blame` - Face for blame info.
 
