@@ -31,6 +31,8 @@
 
 ;;; Code:
 
+(require 'subr-x)
+
 (require 'sideline)
 (require 'vc-msg)
 
@@ -78,13 +80,11 @@
 
 Argument COMMAND is required in sideline backend."
   (cl-case command
-    (`candidates (cons :async #'sideline-blame--get-message))
+    (`candidates (cons :async #'sideline-blame--display))
     (`face 'sideline-blame)))
 
-(defun sideline-blame--get-message (callback &rest _)
-  "Return the message.
-
-Execute CALLBACK to display with sideline."
+(defun sideline-blame--get-message ()
+  "Return the blame message."
   (when-let*
       ((plugin (vc-msg-find-plugin))
        (current-file (funcall vc-msg-get-current-file-function))
@@ -102,10 +102,14 @@ Execute CALLBACK to display with sideline."
            (time (string-to-number (plist-get commit-info :author-time)))
            (summary (if uncommitted sideline-blame-uncommitted-message
                       (plist-get commit-info :summary))))
-      (funcall callback
-               (list (concat (format sideline-blame-author-format author)
-                             (format-time-string sideline-blame-datetime-format time)
-                             (format sideline-blame-commit-format summary)))))))
+      (concat (format sideline-blame-author-format author)
+              (format-time-string sideline-blame-datetime-format time)
+              (format sideline-blame-commit-format summary)))))
+
+(defun sideline-blame--display (callback &rest _)
+  "Execute CALLBACK to display with sideline."
+  (when-let ((msg (sideline-blame--get-message)))
+    (funcall callback (list msg))))
 
 (provide 'sideline-blame)
 ;;; sideline-blame.el ends here
