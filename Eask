@@ -3,7 +3,7 @@
          "Show blame messages with sideline")
 
 (website-url "https://github.com/emacs-sideline/sideline-blame")
-(keywords "sideline" "blame")
+(keywords "convenience" "blame")
 
 (package-file "sideline-blame.el")
 

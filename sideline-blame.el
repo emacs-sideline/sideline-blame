@@ -7,7 +7,7 @@
 ;; URL: https://github.com/emacs-sideline/sideline-blame
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "27.1") (sideline "0.1.0") (vc-msg "1.1.1"))
-;; Keywords: sideline blame
+;; Keywords: convenience blame
 
 ;; This file is not part of GNU Emacs.
 
