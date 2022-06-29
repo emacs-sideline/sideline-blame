@@ -36,7 +36,13 @@
 ;;
 ;;   M-x sideline-mode
 ;;
-;; Make sure your project has the supported
+;; This package uses vc-msg, make sure your project uses one of the following
+;; version control system:
+;;
+;;   * Git
+;;   * Mercurial
+;;   * Subversion
+;;   * Perforce
 ;;
 
 ;;; Code:
