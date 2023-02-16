@@ -17,12 +17,12 @@ Currently supports the following:
 * Subversion
 * Perforce
 
-*P.S. See their homepage for newest support!*
+*P.S. See their homepage for the newest support!*
 
 ## 🔨 Quickstart
 
 ```elisp
-(leaf sideline
+(use-package sideline
   :init
   (setq sideline-backends-left '((sideline-blame . down))))
 ```
