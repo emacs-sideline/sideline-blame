@@ -93,7 +93,7 @@
 
 (defface sideline-blame
   '((t :foreground "#7a88cf"
-       :background nil
+       :background unspecified
        :italic t))
   "Face for blame info."
   :group 'sideline-blame)
