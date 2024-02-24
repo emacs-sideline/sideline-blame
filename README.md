@@ -24,7 +24,7 @@ Currently supports the following:
 ## 🔨 Quickstart
 
 ```elisp
-(use-package sideline
+(use-package sideline-blame
   :init
   (setq sideline-backends-left '((sideline-blame . down))))
 ```
