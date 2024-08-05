@@ -3,6 +3,7 @@
 [![MELPA](https://melpa.org/packages/sideline-blame-badge.svg)](https://melpa.org/#/sideline-blame)
 [![MELPA Stable](https://stable.melpa.org/packages/sideline-blame-badge.svg)](https://stable.melpa.org/#/sideline-blame)
 
+<a href="#"><img align="right" src="https://raw.githubusercontent.com/emacs-sideline/sideline/master/etc/logo.png" width="20%"></a>
 # sideline-blame
 > Show blame messages with sideline
 
