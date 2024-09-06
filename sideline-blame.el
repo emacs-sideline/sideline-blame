@@ -138,7 +138,7 @@ Argument COMMAND is required in sideline backend."
 (defun sideline-blame--display (callback &rest _)
   "Execute CALLBACK to display with sideline."
   (when-let* ((msg (while-no-input (sideline-blame--get-message)))
-              (_ (not (equal t msg))))
+              ((not (equal t msg))))
     (funcall callback (list msg))))
 
 (provide 'sideline-blame)
