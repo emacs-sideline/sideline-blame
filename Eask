@@ -13,7 +13,7 @@
 (source "melpa")
 (source "jcs-elpa")
 
-(depends-on "emacs" "27.1")
+(depends-on "emacs" "28.1")
 (depends-on "sideline")
 (depends-on "vc-msg")
 
