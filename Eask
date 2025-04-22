@@ -1,3 +1,5 @@
+;; -*- mode: eask; lexical-binding: t -*-
+
 (package "sideline-blame"
          "0.1.0"
          "Show blame messages with sideline")
