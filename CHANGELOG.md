@@ -8,7 +8,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## 0.2.0 (Unreleased)
 > Released N/A
 
-* perf: Make `sideline-blame--get-message` interruptible (#4)
+* perf: Make `sideline-blame--get-message` interruptible ([#4](../../pull/4))
 
 ## 0.1.0
 > Released Jun 22, 2022
